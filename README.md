@@ -3,14 +3,15 @@
 ## Overview
 This project predicts house prices using machine learning.
 
-The model is trained using the XGBoost Regressor, a powerful gradient boosting algorithm.
+The model is built using XGBoost Regressor and deployed using Streamlit.
 
 ## Features
-Crime rate
-Number of rooms
-Property tax rate
-Accessibility
-Socioeconomic indicators
+Crime rate (CRIM)
+Number of rooms (RM)
+Tax rate (TAX)
+Accessibility (RAD)
+Socioeconomic indicators (LSTAT)
+Education ratio (PTRATIO)
 
 ## Model
 XGBoost Regressor
@@ -18,15 +19,21 @@ XGBoost Regressor
 ## Evaluation Metrics
 MAE
 MSE
-R2 score
+R2 Score
 
-## Results
-Model shows strong predictive performance on test dataset.
-
-## Tools Used
+## Tech Stack
 Python
 Pandas
+NumPy
 Scikit-learn
 XGBoost
-Matplotlib
-Seaborn
+Streamlit
+
+## How to run
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run app:
+
+streamlit run app.py
